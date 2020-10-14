@@ -29,50 +29,24 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.toolStripStatusLabel3 = new System.Windows.Forms.ToolStripStatusLabel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.用户管理ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.创建用户ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.修改密码ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.用户管理ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.statusStrip1.SuspendLayout();
-            this.menuStrip1.SuspendLayout();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.icon_out = new FontAwesome.Sharp.IconButton();
+            this.label1 = new System.Windows.Forms.Label();
+            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.icon_role = new FontAwesome.Sharp.IconButton();
+            this.icon_user = new FontAwesome.Sharp.IconButton();
+            this.icon_goods = new FontAwesome.Sharp.IconButton();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.icon_xy = new FontAwesome.Sharp.IconButton();
+            this.icon_time = new FontAwesome.Sharp.IconButton();
+            this.icon_welcome = new FontAwesome.Sharp.IconButton();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
+            this.splitContainer1.Panel1.SuspendLayout();
+            this.splitContainer1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // statusStrip1
-            // 
-            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripStatusLabel1,
-            this.toolStripStatusLabel2,
-            this.toolStripStatusLabel3});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 637);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 16, 0);
-            this.statusStrip1.Size = new System.Drawing.Size(1029, 31);
-            this.statusStrip1.TabIndex = 0;
-            // 
-            // toolStripStatusLabel1
-            // 
-            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(195, 24);
-            this.toolStripStatusLabel1.Text = "toolStripStatusLabel1";
-            // 
-            // toolStripStatusLabel2
-            // 
-            this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
-            this.toolStripStatusLabel2.Size = new System.Drawing.Size(195, 24);
-            this.toolStripStatusLabel2.Text = "toolStripStatusLabel2";
-            // 
-            // toolStripStatusLabel3
-            // 
-            this.toolStripStatusLabel3.Name = "toolStripStatusLabel3";
-            this.toolStripStatusLabel3.Size = new System.Drawing.Size(195, 24);
-            this.toolStripStatusLabel3.Text = "toolStripStatusLabel3";
             // 
             // timer1
             // 
@@ -80,86 +54,253 @@
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // menuStrip1
+            // panel1
             // 
-            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.用户管理ToolStripMenuItem,
-            this.用户管理ToolStripMenuItem1});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(7, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1029, 32);
-            this.menuStrip1.TabIndex = 1;
-            this.menuStrip1.Text = "menuStrip1";
+            this.panel1.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel1.Controls.Add(this.icon_out);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1300, 120);
+            this.panel1.TabIndex = 2;
             // 
-            // 用户管理ToolStripMenuItem
+            // icon_out
             // 
-            this.用户管理ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.创建用户ToolStripMenuItem,
-            this.修改密码ToolStripMenuItem});
-            this.用户管理ToolStripMenuItem.Name = "用户管理ToolStripMenuItem";
-            this.用户管理ToolStripMenuItem.Size = new System.Drawing.Size(98, 28);
-            this.用户管理ToolStripMenuItem.Text = "用户管理";
+            this.icon_out.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.icon_out.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.icon_out.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.icon_out.ForeColor = System.Drawing.Color.White;
+            this.icon_out.IconChar = FontAwesome.Sharp.IconChar.SignOutAlt;
+            this.icon_out.IconColor = System.Drawing.Color.White;
+            this.icon_out.IconSize = 22;
+            this.icon_out.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.icon_out.Location = new System.Drawing.Point(1202, 3);
+            this.icon_out.Name = "icon_out";
+            this.icon_out.Rotation = 0D;
+            this.icon_out.Size = new System.Drawing.Size(98, 36);
+            this.icon_out.TabIndex = 1;
+            this.icon_out.Text = "退出系统";
+            this.icon_out.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.icon_out.UseVisualStyleBackColor = true;
+            this.icon_out.Click += new System.EventHandler(this.icon_out_Click);
             // 
-            // 创建用户ToolStripMenuItem
+            // label1
             // 
-            this.创建用户ToolStripMenuItem.Name = "创建用户ToolStripMenuItem";
-            this.创建用户ToolStripMenuItem.Size = new System.Drawing.Size(182, 34);
-            this.创建用户ToolStripMenuItem.Text = "创建用户";
-            this.创建用户ToolStripMenuItem.Click += new System.EventHandler(this.创建用户ToolStripMenuItem_Click);
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("微软雅黑", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(490, 36);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(419, 41);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "企 业 级 进 销 存 管 理 系 统";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // 修改密码ToolStripMenuItem
+            // splitContainer1
             // 
-            this.修改密码ToolStripMenuItem.Name = "修改密码ToolStripMenuItem";
-            this.修改密码ToolStripMenuItem.Size = new System.Drawing.Size(182, 34);
-            this.修改密码ToolStripMenuItem.Text = "修改密码";
+            this.splitContainer1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.splitContainer1.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
+            this.splitContainer1.IsSplitterFixed = true;
+            this.splitContainer1.Location = new System.Drawing.Point(0, 144);
+            this.splitContainer1.Margin = new System.Windows.Forms.Padding(2);
+            this.splitContainer1.Name = "splitContainer1";
             // 
-            // 用户管理ToolStripMenuItem1
+            // splitContainer1.Panel1
             // 
-            this.用户管理ToolStripMenuItem1.Name = "用户管理ToolStripMenuItem1";
-            this.用户管理ToolStripMenuItem1.Size = new System.Drawing.Size(98, 28);
-            this.用户管理ToolStripMenuItem1.Text = "角色管理";
-            this.用户管理ToolStripMenuItem1.Click += new System.EventHandler(this.用户管理ToolStripMenuItem1_Click);
+            this.splitContainer1.Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.splitContainer1.Panel1.Controls.Add(this.icon_role);
+            this.splitContainer1.Panel1.Controls.Add(this.icon_user);
+            this.splitContainer1.Panel1.Controls.Add(this.icon_goods);
+            // 
+            // splitContainer1.Panel2
+            // 
+            this.splitContainer1.Panel2.MouseMove += new System.Windows.Forms.MouseEventHandler(this.splitContainer1_Panel2_MouseMove);
+            this.splitContainer1.Size = new System.Drawing.Size(1298, 551);
+            this.splitContainer1.SplitterDistance = 215;
+            this.splitContainer1.SplitterWidth = 3;
+            this.splitContainer1.TabIndex = 3;
+            // 
+            // icon_role
+            // 
+            this.icon_role.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.icon_role.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.icon_role.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.icon_role.ForeColor = System.Drawing.Color.White;
+            this.icon_role.IconChar = FontAwesome.Sharp.IconChar.UserTag;
+            this.icon_role.IconColor = System.Drawing.Color.Black;
+            this.icon_role.IconSize = 40;
+            this.icon_role.Location = new System.Drawing.Point(0, 158);
+            this.icon_role.Margin = new System.Windows.Forms.Padding(2);
+            this.icon_role.Name = "icon_role";
+            this.icon_role.Rotation = 0D;
+            this.icon_role.Size = new System.Drawing.Size(213, 52);
+            this.icon_role.TabIndex = 3;
+            this.icon_role.Text = "角 色 管 理";
+            this.icon_role.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.icon_role.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.icon_role.UseVisualStyleBackColor = false;
+            this.icon_role.Click += new System.EventHandler(this.icon_role_Click);
+            this.icon_role.MouseLeave += new System.EventHandler(this.icon_goods_MouseLeave);
+            this.icon_role.MouseMove += new System.Windows.Forms.MouseEventHandler(this.icon_goods_MouseMove);
+            // 
+            // icon_user
+            // 
+            this.icon_user.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.icon_user.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.icon_user.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.icon_user.ForeColor = System.Drawing.Color.White;
+            this.icon_user.IconChar = FontAwesome.Sharp.IconChar.UserFriends;
+            this.icon_user.IconColor = System.Drawing.Color.Black;
+            this.icon_user.IconSize = 40;
+            this.icon_user.Location = new System.Drawing.Point(0, 76);
+            this.icon_user.Margin = new System.Windows.Forms.Padding(2);
+            this.icon_user.Name = "icon_user";
+            this.icon_user.Rotation = 0D;
+            this.icon_user.Size = new System.Drawing.Size(213, 52);
+            this.icon_user.TabIndex = 2;
+            this.icon_user.Text = " 用 户 管 理";
+            this.icon_user.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.icon_user.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.icon_user.UseVisualStyleBackColor = false;
+            this.icon_user.Click += new System.EventHandler(this.icon_user_Click);
+            this.icon_user.MouseLeave += new System.EventHandler(this.icon_goods_MouseLeave);
+            this.icon_user.MouseMove += new System.Windows.Forms.MouseEventHandler(this.icon_goods_MouseMove);
+            // 
+            // icon_goods
+            // 
+            this.icon_goods.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.icon_goods.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.icon_goods.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.icon_goods.ForeColor = System.Drawing.Color.White;
+            this.icon_goods.IconChar = FontAwesome.Sharp.IconChar.Coins;
+            this.icon_goods.IconColor = System.Drawing.Color.Black;
+            this.icon_goods.IconSize = 40;
+            this.icon_goods.Location = new System.Drawing.Point(0, 0);
+            this.icon_goods.Margin = new System.Windows.Forms.Padding(2);
+            this.icon_goods.Name = "icon_goods";
+            this.icon_goods.Rotation = 0D;
+            this.icon_goods.Size = new System.Drawing.Size(213, 52);
+            this.icon_goods.TabIndex = 1;
+            this.icon_goods.Text = " 商 品 管 理";
+            this.icon_goods.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.icon_goods.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.icon_goods.UseVisualStyleBackColor = false;
+            this.icon_goods.Click += new System.EventHandler(this.iconButton1_Click);
+            this.icon_goods.MouseLeave += new System.EventHandler(this.icon_goods_MouseLeave);
+            this.icon_goods.MouseMove += new System.Windows.Forms.MouseEventHandler(this.icon_goods_MouseMove);
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.icon_xy);
+            this.panel2.Controls.Add(this.icon_time);
+            this.panel2.Controls.Add(this.icon_welcome);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel2.Location = new System.Drawing.Point(0, 700);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1300, 100);
+            this.panel2.TabIndex = 4;
+            // 
+            // icon_xy
+            // 
+            this.icon_xy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.icon_xy.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.icon_xy.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.icon_xy.IconChar = FontAwesome.Sharp.IconChar.MapMarkerAlt;
+            this.icon_xy.IconColor = System.Drawing.Color.Black;
+            this.icon_xy.IconSize = 40;
+            this.icon_xy.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.icon_xy.Location = new System.Drawing.Point(869, 16);
+            this.icon_xy.Margin = new System.Windows.Forms.Padding(10);
+            this.icon_xy.Name = "icon_xy";
+            this.icon_xy.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.icon_xy.Rotation = 0D;
+            this.icon_xy.Size = new System.Drawing.Size(400, 63);
+            this.icon_xy.TabIndex = 2;
+            this.icon_xy.Text = "iconButton3";
+            this.icon_xy.UseVisualStyleBackColor = false;
+            // 
+            // icon_time
+            // 
+            this.icon_time.AutoSize = true;
+            this.icon_time.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.icon_time.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.icon_time.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.icon_time.IconChar = FontAwesome.Sharp.IconChar.Clock;
+            this.icon_time.IconColor = System.Drawing.Color.Black;
+            this.icon_time.IconSize = 40;
+            this.icon_time.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.icon_time.Location = new System.Drawing.Point(449, 16);
+            this.icon_time.Margin = new System.Windows.Forms.Padding(10);
+            this.icon_time.Name = "icon_time";
+            this.icon_time.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.icon_time.Rotation = 0D;
+            this.icon_time.Size = new System.Drawing.Size(400, 63);
+            this.icon_time.TabIndex = 1;
+            this.icon_time.Text = "iconButton3";
+            this.icon_time.UseVisualStyleBackColor = false;
+            // 
+            // icon_welcome
+            // 
+            this.icon_welcome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.icon_welcome.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.icon_welcome.Font = new System.Drawing.Font("宋体", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.icon_welcome.IconChar = FontAwesome.Sharp.IconChar.DoorOpen;
+            this.icon_welcome.IconColor = System.Drawing.Color.Black;
+            this.icon_welcome.IconSize = 40;
+            this.icon_welcome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.icon_welcome.Location = new System.Drawing.Point(29, 16);
+            this.icon_welcome.Margin = new System.Windows.Forms.Padding(10);
+            this.icon_welcome.Name = "icon_welcome";
+            this.icon_welcome.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.icon_welcome.Rotation = 0D;
+            this.icon_welcome.Size = new System.Drawing.Size(400, 63);
+            this.icon_welcome.TabIndex = 0;
+            this.icon_welcome.Text = "iconButton3";
+            this.icon_welcome.UseVisualStyleBackColor = false;
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.gongneng;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1029, 668);
-            this.Controls.Add(this.statusStrip1);
-            this.Controls.Add(this.menuStrip1);
-            this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.ClientSize = new System.Drawing.Size(1300, 800);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.splitContainer1);
+            this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "进销存管理系统";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             this.Load += new System.EventHandler(this.Main_Load);
-            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.MainForm_MouseMove);
-            this.statusStrip1.ResumeLayout(false);
-            this.statusStrip1.PerformLayout();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.splitContainer1.Panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
+            this.splitContainer1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.StatusStrip statusStrip1;
-        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
-        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel3;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem 用户管理ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 创建用户ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 修改密码ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 用户管理ToolStripMenuItem1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.SplitContainer splitContainer1;
+        private FontAwesome.Sharp.IconButton icon_goods;
+        private FontAwesome.Sharp.IconButton icon_user;
+        private System.Windows.Forms.Panel panel2;
+        private FontAwesome.Sharp.IconButton icon_welcome;
+        private FontAwesome.Sharp.IconButton icon_xy;
+        private FontAwesome.Sharp.IconButton icon_time;
+        private FontAwesome.Sharp.IconButton icon_role;
+        private FontAwesome.Sharp.IconButton icon_out;
     }
 }

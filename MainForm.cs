@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FontAwesome.Sharp;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -27,13 +28,8 @@ namespace WindowsFormsApp1
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            toolStripStatusLabel1.Text = "你好！" + global.username + ",欢迎登录系统   ";
-            toolStripStatusLabel2.Text = "  |  当前时间：" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
-        }
-
-        private void MainForm_MouseMove(object sender, MouseEventArgs e)
-        {
-            toolStripStatusLabel3.Text = "  |  X:" + e.X.ToString() + "  |  Y:" + e.Y.ToString();
+            icon_welcome.Text = "你好！" + global.username + ",欢迎登录系统   ";
+            icon_time.Text = " 当前时间：" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
         }
 
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
@@ -41,12 +37,35 @@ namespace WindowsFormsApp1
             Application.Exit();
         }
 
-        private void 角色管理ToolStripMenuItem_Click(object sender, EventArgs e)
+        // 切换子窗体时，填充到父窗体中
+        private void addForm(Form childForm)
         {
-            if(global.role == "管理员")
+            this.splitContainer1.Panel2.Controls.Clear();
+            childForm.FormBorderStyle = FormBorderStyle.None; //隐藏子窗体边框（去除最小花，最大化，关闭等按钮）
+            childForm.TopLevel = false; //指示子窗体非顶级窗体
+            this.splitContainer1.Panel2.Controls.Add(childForm);//将子窗体载入panel
+            childForm.Dock = DockStyle.Fill;
+            childForm.Show();
+        }
+
+        // 商品管理
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void splitContainer1_Panel2_MouseMove(object sender, MouseEventArgs e)
+        {
+            icon_xy.Text = "    X:" + e.X.ToString() + "  |  Y:" + e.Y.ToString();
+        }
+
+        // 用户管理
+        private void icon_user_Click(object sender, EventArgs e)
+        {
+            if (global.role == "管理员")
             {
-                userManage.role rr = new userManage.role();
-                rr.Show();
+                userManage.user userform = new user();
+                addForm(userform);
             }
             else
             {
@@ -54,23 +73,38 @@ namespace WindowsFormsApp1
             }
         }
 
-        private void 创建用户ToolStripMenuItem_Click(object sender, EventArgs e)
+        // 鼠标移动到iconbutton上
+        private void icon_goods_MouseMove(object sender, MouseEventArgs e)
         {
-            user uu = new user();
-            uu.Show();
+            IconButton senderIconButton = (IconButton)sender;
+            senderIconButton.BackColor = Color.FromArgb(255, 128, 128);
         }
 
-        private void 用户管理ToolStripMenuItem1_Click(object sender, EventArgs e)
+        // 鼠标在iconbutton上移开
+        private void icon_goods_MouseLeave(object sender, EventArgs e)
+        {
+            IconButton senderIconButton = (IconButton)sender;
+            senderIconButton.BackColor = Color.FromArgb(128, 128, 255);
+        }
+
+        // 角色管理
+        private void icon_role_Click(object sender, EventArgs e)
         {
             if (global.role == "管理员")
             {
                 userManage.role rr = new userManage.role();
-                rr.Show();
+                addForm(rr);
             }
             else
             {
                 MessageBox.Show("您没有该权限");
             }
+        }
+
+        // 退出系统
+        private void icon_out_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
