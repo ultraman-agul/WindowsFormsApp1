@@ -12,7 +12,7 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1.userManage
 {
-    public partial class role : Form
+    public partial class role : Sunny.UI.UIForm
     {
         public role()
         {

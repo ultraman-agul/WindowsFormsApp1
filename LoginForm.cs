@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class LoginForm : Form
+    public partial class LoginForm : Sunny.UI.UIForm
     {
         public LoginForm()
         {
@@ -22,19 +22,19 @@ namespace WindowsFormsApp1
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void uiButton1_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void uiButton2_Click_1(object sender, EventArgs e)
         {
-            string pwd = SqlHelper.MD5Hash(textBox2.Text);
-            string sql = "select role from adminTable where username = '" + textBox1.Text + "' and pwd = '" + pwd + "'";
+            string pwd = SqlHelper.MD5Hash(uiTextBox2.Text);
+            string sql = "select role from adminTable where username = '" + uiTextBox1.Text + "' and pwd = '" + pwd + "'";
             object result = SqlHelper.ExecuteScalar(sql);
             if (result!=null)
             {
-                global.username = textBox1.Text;
+                global.username = uiTextBox1.Text;
                 global.role = result.ToString();
                 new MainForm().Show();
                 this.Visible = false;
@@ -42,6 +42,16 @@ namespace WindowsFormsApp1
             else{
                 MessageBox.Show("用户名或密码错误");
             }
+        }
+
+        private void uiTextBox2_Click(object sender, EventArgs e)
+        {
+            this.uiSymbolLabel2.Symbol = 61758;
+        }
+
+        private void uiTextBox2_TextChanged(object sender, EventArgs e)
+        {
+            this.uiSymbolLabel2.Symbol = 61758;
         }
     }
 }

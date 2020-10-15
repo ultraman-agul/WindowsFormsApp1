@@ -13,7 +13,7 @@ using WindowsFormsApp1.userManage;
 
 namespace WindowsFormsApp1
 {
-    public partial class MainForm : Form
+    public partial class MainForm : Sunny.UI.UIForm
     {
         public MainForm()
         {
@@ -105,6 +105,17 @@ namespace WindowsFormsApp1
         private void icon_out_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void icon_updatepwd_Click(object sender, EventArgs e)
+        {
+            updatepwd up = new updatepwd();
+            addForm(up);
+        }
+
+        private void icon_Buy_Click(object sender, EventArgs e)
+        {
+            new buy.buyOrder().Show();
         }
     }
 }

@@ -78,7 +78,7 @@
             this.comboBox1.Location = new System.Drawing.Point(109, 87);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(132, 20);
+            this.comboBox1.Size = new System.Drawing.Size(132, 29);
             this.comboBox1.TabIndex = 7;
             // 
             // label3
@@ -87,7 +87,7 @@
             this.label3.Location = new System.Drawing.Point(37, 87);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 12);
+            this.label3.Size = new System.Drawing.Size(68, 21);
             this.label3.TabIndex = 6;
             this.label3.Text = "角  色：";
             // 
@@ -96,7 +96,7 @@
             this.button6.Location = new System.Drawing.Point(267, 43);
             this.button6.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(47, 33);
+            this.button6.Size = new System.Drawing.Size(81, 33);
             this.button6.TabIndex = 5;
             this.button6.Text = "保存";
             this.button6.UseVisualStyleBackColor = true;
@@ -119,7 +119,7 @@
             this.textBox2.Location = new System.Drawing.Point(109, 56);
             this.textBox2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(132, 21);
+            this.textBox2.Size = new System.Drawing.Size(132, 29);
             this.textBox2.TabIndex = 3;
             this.textBox2.Text = "123";
             // 
@@ -128,7 +128,7 @@
             this.textBox1.Location = new System.Drawing.Point(109, 21);
             this.textBox1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(132, 21);
+            this.textBox1.Size = new System.Drawing.Size(132, 29);
             this.textBox1.TabIndex = 2;
             // 
             // label2
@@ -137,7 +137,7 @@
             this.label2.Location = new System.Drawing.Point(36, 59);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 12);
+            this.label2.Size = new System.Drawing.Size(68, 21);
             this.label2.TabIndex = 1;
             this.label2.Text = "密  码：";
             // 
@@ -147,7 +147,7 @@
             this.label1.Location = new System.Drawing.Point(36, 31);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 12);
+            this.label1.Size = new System.Drawing.Size(74, 21);
             this.label1.TabIndex = 0;
             this.label1.Text = "用户名：";
             // 
@@ -201,19 +201,19 @@
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView1.Location = new System.Drawing.Point(0, 35);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 27;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(611, 326);
+            this.dataGridView1.Size = new System.Drawing.Size(611, 291);
             this.dataGridView1.TabIndex = 3;
             // 
             // user
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(611, 391);
             this.Controls.Add(this.groupBox1);
@@ -221,7 +221,6 @@
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Name = "user";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "用户管理";
             this.Load += new System.EventHandler(this.user_Load);
             this.groupBox1.ResumeLayout(false);

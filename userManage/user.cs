@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1.userManage
 {
-    public partial class user : Form
+    public partial class user : Sunny.UI.UIForm
     {
         public static int flag = 0;
         public user()

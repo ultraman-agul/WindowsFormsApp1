@@ -55,6 +55,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="buy\buyOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="buy\buyOrder.Designer.cs">
+      <DependentUpon>buyOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="buy\orederEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="buy\orederEdit.Designer.cs">
+      <DependentUpon>orederEdit.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,6 +83,18 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SqlHelper.cs" />
+    <Compile Include="testForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="testForm1.Designer.cs">
+      <DependentUpon>testForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="updatepwd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updatepwd.Designer.cs">
+      <DependentUpon>updatepwd.cs</DependentUpon>
+    </Compile>
     <Compile Include="userManage\role.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +107,12 @@
     <Compile Include="userManage\user.Designer.cs">
       <DependentUpon>user.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="buy\buyOrder.resx">
+      <DependentUpon>buyOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="buy\orederEdit.resx">
+      <DependentUpon>orederEdit.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -99,6 +129,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="testForm1.resx">
+      <DependentUpon>testForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updatepwd.resx">
+      <DependentUpon>updatepwd.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="userManage\role.resx">
       <DependentUpon>role.cs</DependentUpon>
     </EmbeddedResource>
@@ -199,6 +235,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="images\iconfont\zuobiao1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\[自媒体资源 _ 自媒体人的素材库_mishu.pro][夜照片_手电筒_射线][720 x 405][2020-10-15 21_29_24].jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\[自媒体资源 _ 自媒体人的素材库_mishu.pro][银河系_繁星点点的天空_夜晚的天空][720 x 405][2020-10-15 21_30_42].jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\timg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\wallhaven.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

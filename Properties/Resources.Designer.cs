@@ -73,6 +73,26 @@ namespace WindowsFormsApp1.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap _自媒体资源___自媒体人的素材库_mishu_pro__夜照片_手电筒_射线__720_x_405__2020_10_15_21_29_24_ {
+            get {
+                object obj = ResourceManager.GetObject("[自媒体资源 _ 自媒体人的素材库_mishu.pro][夜照片_手电筒_射线][720 x 405][2020-10-15 21_29_24]", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap _自媒体资源___自媒体人的素材库_mishu_pro__银河系_繁星点点的天空_夜晚的天空__720_x_405__2020_10_15_21_30_42_ {
+            get {
+                object obj = ResourceManager.GetObject("[自媒体资源 _ 自媒体人的素材库_mishu.pro][银河系_繁星点点的天空_夜晚的天空][720 x 405][2020-10-15 21_30_42]", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap caigoudan {
             get {
                 object obj = ResourceManager.GetObject("caigoudan", resourceCulture);
@@ -216,6 +236,26 @@ namespace WindowsFormsApp1.Properties {
         internal static System.Drawing.Bitmap shijian1 {
             get {
                 object obj = ResourceManager.GetObject("shijian1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap timg {
+            get {
+                object obj = ResourceManager.GetObject("timg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap wallhaven {
+            get {
+                object obj = ResourceManager.GetObject("wallhaven", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
